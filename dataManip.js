@@ -33,6 +33,9 @@ console.log('-----------')
 // ways of handling it with other data structures
 // that we will review later.
 const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4; 
+console.log(isUnique);
+console.log('-----------')
+
 
 // Here, we put the results into a single variable 
 // for convenience. Note how we negate isOver25 using
@@ -40,8 +43,11 @@ const isUnique = n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 
 // "isUnder25" as an alternative.
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique; 
 
+
 // Finally, log the results.
-// console.log(isValid); // this will run as true bc the console log is already entered
+console.log(isValid); 
+console.log('-----------')
+
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
@@ -52,3 +58,4 @@ const dontDoThis = ((n1 + n2 + n3 + n4) == 50) &&
   ((n1 % 2) + (n2 % 2) + (n3 % 2) + (n4 % 2) >= 2) && 
   !(n1 > 25 || n2 > 25 || n3 > 25 || n4 > 25) && 
   (n1 != n2 && n1 != n3 && n1 != n4 && n2 != n3 && n2 != n4 && n3 != n4);
+  console.log(dontDoThis);
